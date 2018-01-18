@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
+        "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
+        "hot": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=webpack.config.js",
+        "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.16.2",
+        "bootstrap-sass": "^3.3.7",
+        "cross-env": "^5.0.1",
+        "has-flag": "^2.0.0",
+        "jquery": "^3.2.1",
+        "laravel-mix": "^0.12.1",
+        "lodash": "^4.17.4",
+        "lodash._createassigner": "^3.1.1",
+        "vue": "^2.3.4",
+        "node-sass": "^4.5.3"
+    },
+    "dependencies": {
+    }
+}

@@ -1,0 +1,158 @@
+.totop:hover,
+html {
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    height: auto;
+    width: auto;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    background: #f5f5f5;
+    color: #656565;
+    letter-spacing: 0.5px;
+}
+
+a {
+    color: #656565;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d6623d;
+}
+
+::selection {
+    background: #d6623d;
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+.totop,
+.totop:hover {
+    transition: .2s;
+    color: #fff
+}
+.onlineService {
+    position: fixed;
+    right: 20px;
+    bottom: 5%;
+    z-index: 1000
+}
+
+.totop:hover {
+    opacity: 1;
+    background-color: #D7633E;
+    box-shadow: #C3C3C2 0 0 10px
+}
+
+.totop {
+    opacity: 0.5;
+    box-shadow: #C3C3C2 0 0 1px;
+    background-color: #F5754C;
+    border-color: #D6623D;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 100%
+}
+
+#nprogress {
+    pointer-events: none
+}
+
+#nprogress .bar {
+    background: #EC9573;
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px
+}
+
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #D6623D, 0 0 5px #D6623D;
+    opacity: 1;
+    -webkit-transform: rotate(3deg) translate(0, -4px);
+    -ms-transform: rotate(3deg) translate(0, -4px);
+    transform: rotate(3deg) translate(0, -4px)
+}
+
+#nprogress .spinner {
+    display: block;
+    position: fixed;
+    z-index: 1031;
+    top: 15px;
+    right: 15px
+}
+
+#nprogress .spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-top-color: #D6623D;
+    border-left-color: #D6623D;
+    border-radius: 50%;
+    -webkit-animation: nprogress-spinner .4s linear infinite;
+    animation: nprogress-spinner .4s linear infinite
+}
+
+.nprogress-custom-parent {
+    overflow: hidden;
+    position: relative
+}
+
+.nprogress-custom-parent #nprogress .bar,
+.nprogress-custom-parent #nprogress .spinner {
+    position: absolute
+}
+
+@-webkit-keyframes nprogress-spinner {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes nprogress-spinner {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
